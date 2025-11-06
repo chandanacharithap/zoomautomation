@@ -105,3 +105,5 @@ your-repo/
 ```
 
 That’s it—everything is runnable via **Xcode GUI**: set the **Destination** iPhone at the top, then click the **diamond** next to **Host** or **Client** in the **Test Navigator**. Push this repo to GitHub as-is (with the `.gitignore`) and you’re good.
+
+Note: Please add sleep(5) as the first line in private func clientFlow(on app: XCUIApplication) function so that the automation will run smoothly.
