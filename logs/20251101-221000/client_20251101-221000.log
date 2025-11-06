@@ -1,0 +1,475 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project wireguardZoomAutomation.xcodeproj -scheme wireguardZoomAutomation -destination id=00008030-000E71900A12202E -parallel-testing-enabled NO "-only-testing:ZoomDualUITests/ClientAutomation" test
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'wireguardZoomAutomationUITests' in project 'wireguardZoomAutomation'
+        ➜ Explicit dependency on target 'wireguardZoomAutomation' in project 'wireguardZoomAutomation'
+    Target 'wireguardZoomAutomationTests' in project 'wireguardZoomAutomation'
+        ➜ Explicit dependency on target 'wireguardZoomAutomation' in project 'wireguardZoomAutomation'
+    Target 'ZoomDualUITests' in project 'wireguardZoomAutomation'
+        ➜ Explicit dependency on target 'wireguardZoomAutomation' in project 'wireguardZoomAutomation'
+    Target 'wireguardZoomAutomation' in project 'wireguardZoomAutomation' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/hem/Desktop/wireguardZoomAutomation/wireguardZoomAutomation/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: b6480e5b0543fc8f64b2820c28e8b9e2
+Build description path: /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/XCBuildData/b6480e5b0543fc8f64b2820c28e8b9e2.xcbuilddata
+ProcessProductPackaging "" /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/wireguardZoomAutomation.app.xcent (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "8PL8M7Y7H2.automation.wireguardZoomAutomation";
+    "com.apple.developer.team-identifier" = 8PL8M7Y7H2;
+    "get-task-allow" = 1;
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/wireguardZoomAutomation.app.xcent
+
+ProcessProductPackagingDER /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/wireguardZoomAutomation.app.xcent /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/wireguardZoomAutomation.app.xcent.der (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    /usr/bin/derq query -f xml -i /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/wireguardZoomAutomation.app.xcent -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/wireguardZoomAutomation.app.xcent.der --raw
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk /Users/hem/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache
+    cd /Users/hem/Desktop/wireguardZoomAutomation/wireguardZoomAutomation.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk -o /Users/hem/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos26.0-23A339-81ce72e5b06c9602b9d30b56f2eed08a.sdkstatcache
+
+ProcessProductPackaging "" /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent (in target 'ZoomDualUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "8PL8M7Y7H2.automation.ZoomDualUITests.xctrunner";
+    "com.apple.developer.team-identifier" = 8PL8M7Y7H2;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "8PL8M7Y7H2.automation.ZoomDualUITests.xctrunner"
+    );
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent
+
+ProcessProductPackagingDER /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent.der (in target 'ZoomDualUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    /usr/bin/derq query -f xml -i /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent.der --raw
+
+CompileAssetCatalogVariant thinned /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app /Users/hem/Desktop/wireguardZoomAutomation/wireguardZoomAutomation/Assets.xcassets (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/hem/Desktop/wireguardZoomAutomation/wireguardZoomAutomation/Assets.xcassets --compile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone12,1 --filter-for-device-os-version 18.4 --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 17.6 --platform iphoneos
+/* com.apple.actool.compilation-results */
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/assetcatalog_generated_info.plist_thinned
+
+
+ProcessInfoPlistFile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/Info.plist /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/empty-wireguardZoomAutomation.plist (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-infoPlistUtility /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/empty-wireguardZoomAutomation.plist -producttype com.apple.product-type.application -genpkginfo /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/assetcatalog_generated_info.plist -requiredArchitecture arm64 -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/Info.plist
+
+CopySwiftLibs /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-swiftStdLibTool --copy --verbose --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --scan-executable /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/wireguardZoomAutomation.debug.dylib --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/Frameworks --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/SystemExtensions --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/Extensions --platform iphoneos --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+ProcessInfoPlistFile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/Info.plist /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationTests.build/empty-wireguardZoomAutomationTests.plist (in target 'wireguardZoomAutomationTests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-infoPlistUtility /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationTests.build/empty-wireguardZoomAutomationTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/Info.plist
+
+CopySwiftLibs /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest (in target 'wireguardZoomAutomationTests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-swiftStdLibTool --copy --verbose --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --scan-executable /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/wireguardZoomAutomationTests --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/Frameworks --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/PlugIns --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/SystemExtensions --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/Extensions --platform iphoneos --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/PlugIns/wireguardZoomAutomationTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+CodeSign /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/wireguardZoomAutomation.debug.dylib (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Signing Identity:     "Apple Development: chandanacharitha8@gmail.com (GH22PG2FNQ)"
+    Provisioning Profile: "iOS Team Provisioning Profile: automation.wireguardZoomAutomation"
+                          (d155a63b-418d-4714-8ae6-2887cbc8d034)
+    
+    /usr/bin/codesign --force --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D -o runtime --timestamp\=none --generate-entitlement-der /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/wireguardZoomAutomation.debug.dylib
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/wireguardZoomAutomation.debug.dylib: replacing existing signature
+
+CodeSign /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/__preview.dylib (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Signing Identity:     "Apple Development: chandanacharitha8@gmail.com (GH22PG2FNQ)"
+    Provisioning Profile: "iOS Team Provisioning Profile: automation.wireguardZoomAutomation"
+                          (d155a63b-418d-4714-8ae6-2887cbc8d034)
+    
+    /usr/bin/codesign --force --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D -o runtime --timestamp\=none --generate-entitlement-der /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/__preview.dylib
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app/__preview.dylib: replacing existing signature
+
+CodeSign /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Signing Identity:     "Apple Development: chandanacharitha8@gmail.com (GH22PG2FNQ)"
+    Provisioning Profile: "iOS Team Provisioning Profile: automation.wireguardZoomAutomation"
+                          (d155a63b-418d-4714-8ae6-2887cbc8d034)
+    
+    /usr/bin/codesign --force --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D -o runtime --entitlements /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomation.build/wireguardZoomAutomation.app.xcent --timestamp\=none --generate-entitlement-der /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app: replacing existing signature
+
+Validate /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app (in target 'wireguardZoomAutomation' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-validationUtility /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomation.app -shallow-bundle -infoplist-subpath Info.plist
+
+ProcessProductPackaging "" /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent (in target 'wireguardZoomAutomationUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Entitlements:
+    
+    {
+    "application-identifier" = "8PL8M7Y7H2.automation.wireguardZoomAutomationUITests.xctrunner";
+    "com.apple.developer.team-identifier" = 8PL8M7Y7H2;
+    "get-task-allow" = 1;
+    "keychain-access-groups" =     (
+        "8PL8M7Y7H2.automation.wireguardZoomAutomationUITests.xctrunner"
+    );
+}
+    
+    builtin-productPackagingUtility -entitlements -format xml -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent
+
+ProcessProductPackagingDER /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent.der (in target 'wireguardZoomAutomationUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    /usr/bin/derq query -f xml -i /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent.der --raw
+
+ProcessInfoPlistFile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/Info.plist /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/empty-ZoomDualUITests.plist (in target 'ZoomDualUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-infoPlistUtility /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/empty-ZoomDualUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ProductTypeInfoPlistAdditions.plist -requiredArchitecture arm64 -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/Info.plist
+
+CopySwiftLibs /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest (in target 'ZoomDualUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-swiftStdLibTool --copy --verbose --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --scan-executable /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/ZoomDualUITests --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/Frameworks --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/PlugIns --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/SystemExtensions --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/Extensions --platform iphoneos --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+CodeSign /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest (in target 'ZoomDualUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Signing Identity:     "Apple Development: chandanacharitha8@gmail.com (GH22PG2FNQ)"
+    Provisioning Profile: "iOS Team Provisioning Profile: automation.ZoomDualUITests.xctrunner"
+                          (03caaa90-81e0-4208-8b73-3f6dea449d94)
+    
+    /usr/bin/codesign --force --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --entitlements /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent --timestamp\=none --generate-entitlement-der /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app/PlugIns/ZoomDualUITests.xctest: replacing existing signature
+
+CodeSign /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app (in target 'ZoomDualUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Signing Identity:     "Apple Development: chandanacharitha8@gmail.com (GH22PG2FNQ)"
+    Provisioning Profile: "iOS Team Provisioning Profile: automation.ZoomDualUITests.xctrunner"
+                          (03caaa90-81e0-4208-8b73-3f6dea449d94)
+    
+    /usr/bin/codesign --force --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --entitlements /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/ZoomDualUITests.build/ZoomDualUITests.xctest.xcent --timestamp\=none --generate-entitlement-der /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/ZoomDualUITests-Runner.app: replacing existing signature
+
+ProcessInfoPlistFile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/Info.plist /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/empty-wireguardZoomAutomationUITests.plist (in target 'wireguardZoomAutomationUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-infoPlistUtility /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/empty-wireguardZoomAutomationUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/ProductTypeInfoPlistAdditions.plist -requiredArchitecture arm64 -o /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/Info.plist
+
+CopySwiftLibs /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest (in target 'wireguardZoomAutomationUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    builtin-swiftStdLibTool --copy --verbose --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --scan-executable /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/wireguardZoomAutomationUITests --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/Frameworks --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/PlugIns --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/SystemExtensions --scan-folder /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/Extensions --platform iphoneos --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+
+CodeSign /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest (in target 'wireguardZoomAutomationUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Signing Identity:     "Apple Development: chandanacharitha8@gmail.com (GH22PG2FNQ)"
+    Provisioning Profile: "iOS Team Provisioning Profile: automation.wireguardZoomAutomationUITests.xctrunner"
+                          (b865ad2e-32a4-4cd0-a6bd-c81ae20c38de)
+    
+    /usr/bin/codesign --force --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --entitlements /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent --timestamp\=none --generate-entitlement-der /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app/PlugIns/wireguardZoomAutomationUITests.xctest: replacing existing signature
+
+CodeSign /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app (in target 'wireguardZoomAutomationUITests' from project 'wireguardZoomAutomation')
+    cd /Users/hem/Desktop/wireguardZoomAutomation
+    
+    Signing Identity:     "Apple Development: chandanacharitha8@gmail.com (GH22PG2FNQ)"
+    Provisioning Profile: "iOS Team Provisioning Profile: automation.wireguardZoomAutomationUITests.xctrunner"
+                          (b865ad2e-32a4-4cd0-a6bd-c81ae20c38de)
+    
+    /usr/bin/codesign --force --sign DAD8602F84CFE6465F4E8913D89D1EAF2978731D --entitlements /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Intermediates.noindex/wireguardZoomAutomation.build/Debug-iphoneos/wireguardZoomAutomationUITests.build/wireguardZoomAutomationUITests.xctest.xcent --timestamp\=none --generate-entitlement-der /Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app
+/Users/hem/Library/Developer/Xcode/DerivedData/wireguardZoomAutomation-frpouzlaalsanwbrucqxwbaehthj/Build/Products/Debug-iphoneos/wireguardZoomAutomationUITests-Runner.app: replacing existing signature
+
+2025-11-01 22:10:13.638342-0400 ZoomDualUITests-Runner[1010:211277] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2025-11-01 22:10:14.130.
+Test Suite 'ZoomDualUITests.xctest' started at 2025-11-01 22:10:14.131.
+Test Suite 'ClientAutomation' started at 2025-11-01 22:10:14.131.
+Test Case '-[ZoomDualUITests.ClientAutomation testClient_LoopTunnels_JoinAndWait]' started.
+    t =     0.00s Start Test at 2025-11-01 22:10:14.132
+    t =     0.02s Set Up
+    t =     0.02s Open com.wireguard.ios
+    t =     0.02s     Launch com.wireguard.ios
+    t =     0.15s         Setting up automation session
+    t =     0.29s         Wait for com.wireguard.ios to idle
+    t =     1.42s Open com.wireguard.ios
+    t =     1.42s     Activate com.wireguard.ios
+    t =     1.44s         Wait for com.wireguard.ios to idle
+    t =     1.46s Waiting 8.0s for Table (First Match) to exist
+    t =     2.50s     Checking `Expect predicate `existsNoRetry == 1` for object Table (First Match)`
+    t =     2.50s         Checking existence of `Table (First Match)`
+    t =     2.58s Checking existence of `Cell (First Match)`
+    t =     2.62s Checking existence of `Cell (First Match)`
+    t =     2.64s Checking existence of `Switch (First Match)`
+    t =     2.67s Find the Switch (First Match)
+    t =     2.70s Tap "rtc-central-us" Switch
+    t =     2.71s     Wait for com.wireguard.ios to idle
+    t =     2.71s     Find the "rtc-central-us" Switch
+    t =     2.73s     Check for interrupting elements affecting "rtc-central-us" Switch
+    t =     2.78s     Synthesize event
+    t =     3.08s     Wait for com.wireguard.ios to idle
+    t =     3.09s Find the "rtc-central-us" Switch
+    t =     3.16s Open us.zoom.videomeetings
+    t =     3.16s     Launch us.zoom.videomeetings
+    t =     3.26s         Setting up automation session
+    t =     3.35s         Wait for us.zoom.videomeetings to idle
+    t =     4.89s Open us.zoom.videomeetings
+    t =     4.89s     Activate us.zoom.videomeetings
+    t =     4.92s         Wait for us.zoom.videomeetings to idle
+    t =     5.29s Checking existence of `Alert (First Match)`
+    t =     5.37s Checking existence of `Sheet (First Match)`
+    t =     5.39s Checking existence of `Other (First Match)`
+    t =     5.39s Get all elements bound by index for: Descendants matching type StaticText
+    t =     5.43s Find the StaticText (Element at index 0)
+    t =     5.46s Find the StaticText (Element at index 1)
+    t =     5.48s Find the StaticText (Element at index 2)
+    t =     5.50s Find the StaticText (Element at index 3)
+    t =     5.52s Find the StaticText (Element at index 4)
+    t =     5.55s Find the StaticText (Element at index 5)
+    t =     5.57s Checking existence of `"End" Button`
+    t =     5.59s Checking existence of `"End Meeting" Button`
+    t =     5.61s Checking existence of `"Leave" Button`
+    t =     5.63s Checking existence of `Alert (First Match)`
+    t =     5.65s Checking existence of `Sheet (First Match)`
+    t =     5.67s Checking existence of `Other (First Match)`
+    t =     5.68s Checking existence of `"End" Button`
+    t =     5.70s Checking existence of `"End" Button`
+    t =     5.72s Checking existence of `"End" StaticText`
+    t =     5.74s Checking existence of `"End Meeting" Button`
+    t =     5.76s Checking existence of `"End Meeting" StaticText`
+    t =     5.78s Checking existence of `"End meeting for all" Button`
+    t =     5.80s Checking existence of `"End meeting for all" StaticText`
+    t =     5.83s Checking existence of `"End Meeting for All" Button`
+    t =     5.85s Checking existence of `"End Meeting for All" StaticText`
+    t =     5.88s Checking existence of `"Leave" Button`
+    t =     5.90s Checking existence of `"Leave" StaticText`
+    t =     5.92s Checking existence of `"Leave Meeting" Button`
+    t =     5.95s Checking existence of `"Leave Meeting" StaticText`
+    t =     5.97s Checking existence of `"OK" Button`
+    t =     5.99s Checking existence of `"OK" StaticText`
+    t =     6.01s Checking existence of `"Close" Button`
+    t =     6.03s Checking existence of `"Close" StaticText`
+    t =     6.06s Checking existence of `"Dismiss" Button`
+    t =     6.08s Checking existence of `"Dismiss" StaticText`
+    t =     6.10s Checking existence of `"Not Now" Button`
+    t =     6.12s Checking existence of `"Not Now" StaticText`
+    t =     6.14s Checking existence of `"Remind Me Later" Button`
+    t =     6.16s Checking existence of `"Remind Me Later" StaticText`
+    t =     6.18s Checking existence of `"Later" Button`
+    t =     6.20s Checking existence of `"Later" StaticText`
+    t =     6.23s Checking existence of `"Continue" Button`
+    t =     6.25s Checking existence of `"Continue" StaticText`
+    t =     6.27s Checking existence of `"Got it" Button`
+    t =     6.29s Checking existence of `"Got it" StaticText`
+    t =     6.31s Checking existence of `"Done" Button`
+    t =     6.33s Checking existence of `"Done" StaticText`
+    t =     6.35s Checking existence of `"Allow" Button`
+    t =     6.37s Checking existence of `"Allow" StaticText`
+    t =     6.39s Checking existence of `"Don’t Allow" Button`
+    t =     6.42s Checking existence of `"Don’t Allow" StaticText`
+    t =     6.44s Checking existence of `"Don't Allow" Button`
+    t =     6.46s Checking existence of `"Don't Allow" StaticText`
+    t =     6.48s Checking existence of `"Allow While Using App" Button`
+    t =     6.50s Checking existence of `"Allow While Using App" StaticText`
+    t =     6.52s Checking existence of `"Allow Once" Button`
+    t =     6.54s Checking existence of `"Allow Once" StaticText`
+    t =     6.56s Checking existence of `"Rate Later" Button`
+    t =     6.58s Checking existence of `"Rate Later" StaticText`
+    t =     6.61s Checking existence of `"Maybe Later" Button`
+    t =     6.63s Checking existence of `"Maybe Later" StaticText`
+    t =     6.65s Checking existence of `"No Thanks" Button`
+    t =     6.67s Checking existence of `"No Thanks" StaticText`
+    t =     6.69s Checking existence of `"Skip" Button`
+    t =     6.71s Checking existence of `"Skip" StaticText`
+    t =     6.74s Checking existence of `"Not now" Button`
+    t =     6.76s Checking existence of `"Not now" StaticText`
+    t =     6.78s Checking existence of `"Manage" Button`
+    t =     6.80s Checking existence of `"Manage" StaticText`
+    t =     6.82s Checking existence of `"Settings" Button`
+    t =     6.85s Checking existence of `"Settings" StaticText`
+    t =     6.89s Open us.zoom.videomeetings
+    t =     6.89s     Activate us.zoom.videomeetings
+    t =     6.91s         Wait for us.zoom.videomeetings to idle
+    t =     6.92s Tap Application 'us.zoom.videomeetings'[0.50, 0.50]
+    t =     6.92s     Wait for us.zoom.videomeetings to idle
+    t =     6.92s     Find the Application 'us.zoom.videomeetings'
+    t =     6.94s     Check for interrupting elements affecting "Zoom" Application
+    t =     6.95s     Synthesize event
+    t =     6.96s         Find the Application 'us.zoom.videomeetings'
+    t =     6.97s         Find the Application 'us.zoom.videomeetings'
+    t =     6.99s         Find the Application 'us.zoom.videomeetings'
+    t =     7.28s     Wait for us.zoom.videomeetings to idle
+    t =     7.29s Checking existence of `Alert (First Match)`
+    t =     7.34s Checking existence of `Sheet (First Match)`
+    t =     7.37s Checking existence of `Other (First Match)`
+    t =     7.39s Checking existence of `"End" Button`
+    t =     7.42s Checking existence of `"End" Button`
+    t =     7.45s Checking existence of `"End" StaticText`
+    t =     7.47s Checking existence of `"End Meeting" Button`
+    t =     7.50s Checking existence of `"End Meeting" StaticText`
+    t =     7.52s Checking existence of `"End meeting for all" Button`
+    t =     7.54s Checking existence of `"End meeting for all" StaticText`
+    t =     7.57s Checking existence of `"End Meeting for All" Button`
+    t =     7.59s Checking existence of `"End Meeting for All" StaticText`
+    t =     7.61s Checking existence of `"Leave" Button`
+    t =     7.63s Checking existence of `"Leave" StaticText`
+    t =     7.65s Checking existence of `"Leave Meeting" Button`
+    t =     7.67s Checking existence of `"Leave Meeting" StaticText`
+    t =     7.69s Checking existence of `"OK" Button`
+    t =     7.72s Checking existence of `"OK" StaticText`
+    t =     7.74s Checking existence of `"Close" Button`
+    t =     7.76s Checking existence of `"Close" StaticText`
+    t =     7.78s Checking existence of `"Dismiss" Button`
+    t =     7.80s Checking existence of `"Dismiss" StaticText`
+    t =     7.82s Checking existence of `"Not Now" Button`
+    t =     7.84s Checking existence of `"Not Now" StaticText`
+    t =     7.86s Checking existence of `"Remind Me Later" Button`
+    t =     7.88s Checking existence of `"Remind Me Later" StaticText`
+    t =     7.91s Checking existence of `"Later" Button`
+    t =     7.92s Checking existence of `"Later" StaticText`
+    t =     7.94s Checking existence of `"Continue" Button`
+    t =     7.96s Checking existence of `"Continue" StaticText`
+    t =     7.98s Checking existence of `"Got it" Button`
+    t =     8.00s Checking existence of `"Got it" StaticText`
+    t =     8.02s Checking existence of `"Done" Button`
+    t =     8.04s Checking existence of `"Done" StaticText`
+    t =     8.07s Checking existence of `"Allow" Button`
+    t =     8.09s Checking existence of `"Allow" StaticText`
+    t =     8.12s Checking existence of `"Don’t Allow" Button`
+    t =     8.14s Checking existence of `"Don’t Allow" StaticText`
+    t =     8.16s Checking existence of `"Don't Allow" Button`
+    t =     8.18s Checking existence of `"Don't Allow" StaticText`
+    t =     8.20s Checking existence of `"Allow While Using App" Button`
+    t =     8.23s Checking existence of `"Allow While Using App" StaticText`
+    t =     8.25s Checking existence of `"Allow Once" Button`
+    t =     8.27s Checking existence of `"Allow Once" StaticText`
+    t =     8.30s Checking existence of `"Rate Later" Button`
+    t =     8.32s Checking existence of `"Rate Later" StaticText`
+    t =     8.34s Checking existence of `"Maybe Later" Button`
+    t =     8.36s Checking existence of `"Maybe Later" StaticText`
+    t =     8.38s Checking existence of `"No Thanks" Button`
+    t =     8.40s Checking existence of `"No Thanks" StaticText`
+    t =     8.42s Checking existence of `"Skip" Button`
+    t =     8.45s Checking existence of `"Skip" StaticText`
+    t =     8.47s Checking existence of `"Not now" Button`
+    t =     8.49s Checking existence of `"Not now" StaticText`
+    t =     8.51s Checking existence of `"Manage" Button`
+    t =     8.53s Checking existence of `"Manage" StaticText`
+    t =     8.55s Checking existence of `"Settings" Button`
+    t =     8.57s Checking existence of `"Settings" StaticText`
+    t =     8.60s Get number of matches for: Elements matching predicate 'label == "Decline"'
+    t =     8.61s Checking existence of `"Join" Button`
+    t =     8.69s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
+    t =     8.70s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
+    t =     8.70s Checking existence of `"Join" StaticText`
+    t =     8.76s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
+    t =     8.77s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
+    t =     9.18s Open us.zoom.videomeetings
+    t =     9.19s     Activate us.zoom.videomeetings
+    t =     9.22s         Wait for us.zoom.videomeetings to idle
+    t =     9.23s Tap Application 'us.zoom.videomeetings'[0.50, 0.50]
+    t =     9.23s     Wait for us.zoom.videomeetings to idle
+    t =     9.24s     Find the Application 'us.zoom.videomeetings'
+    t =     9.30s     Check for interrupting elements affecting "Zoom" Application
+    t =     9.33s     Synthesize event
+    t =     9.34s         Find the Application 'us.zoom.videomeetings'
+    t =     9.37s         Find the Application 'us.zoom.videomeetings'
+    t =     9.39s         Find the Application 'us.zoom.videomeetings'
+    t =     9.70s     Wait for us.zoom.videomeetings to idle
+    t =     9.72s Checking existence of `Alert (First Match)`
+    t =     9.77s Checking existence of `Sheet (First Match)`
+    t =     9.80s Checking existence of `Other (First Match)`
+    t =     9.81s Checking existence of `"End" Button`
+    t =     9.84s Checking existence of `"End" Button`
+    t =     9.87s Checking existence of `"End" StaticText`
+    t =     9.89s Checking existence of `"End Meeting" Button`
+    t =     9.91s Checking existence of `"End Meeting" StaticText`
+    t =     9.93s Checking existence of `"End meeting for all" Button`
+    t =     9.95s Checking existence of `"End meeting for all" StaticText`
+    t =     9.97s Checking existence of `"End Meeting for All" Button`
+    t =     9.99s Checking existence of `"End Meeting for All" StaticText`
+    t =    10.02s Checking existence of `"Leave" Button`
+    t =    10.04s Checking existence of `"Leave" StaticText`
+    t =    10.06s Checking existence of `"Leave Meeting" Button`
+    t =    10.08s Checking existence of `"Leave Meeting" StaticText`
+    t =    10.10s Checking existence of `"OK" Button`
+    t =    10.12s Checking existence of `"OK" StaticText`
+    t =    10.14s Checking existence of `"Close" Button`
+    t =    10.16s Checking existence of `"Close" StaticText`
+    t =    10.18s Checking existence of `"Dismiss" Button`
+    t =    10.21s Checking existence of `"Dismiss" StaticText`
+    t =    10.23s Checking existence of `"Not Now" Button`
+    t =    10.25s Checking existence of `"Not Now" StaticText`
+    t =    10.26s Checking existence of `"Remind Me Later" Button`
+    t =    10.29s Checking existence of `"Remind Me Later" StaticText`
+    t =    10.31s Checking existence of `"Later" Button`
+    t =    10.33s Checking existence of `"Later" StaticText`
+    t =    10.35s Checking existence of `"Continue" Button`
+    t =    10.37s Checking existence of `"Continue" StaticText`
+    t =    10.39s Checking existence of `"Got it" Button`
+    t =    10.41s Checking existence of `"Got it" StaticText`
+    t =    10.43s Checking existence of `"Done" Button`
+    t =    10.45s Checking existence of `"Done" StaticText`
+    t =    10.47s Checking existence of `"Allow" Button`
+    t =    10.49s Checking existence of `"Allow" StaticText`
+    t =    10.52s Checking existence of `"Don’t Allow" Button`
+    t =    10.54s Checking existence of `"Don’t Allow" StaticText`
+    t =    10.56s Checking existence of `"Don't Allow" Button`
+    t =    10.58s Checking existence of `"Don't Allow" StaticText`
+    t =    10.60s Checking existence of `"Allow While Using App" Button`
+    t =    10.62s Checking existence of `"Allow While Using App" StaticText`
+    t =    10.64s Checking existence of `"Allow Once" Button`
+    t =    10.67s Checking existence of `"Allow Once" StaticText`
+    t =    10.69s Checking existence of `"Rate Later" Button`
+    t =    10.71s Checking existence of `"Rate Later" StaticText`
+    t =    10.73s Checking existence of `"Maybe Later" Button`
+    t =    10.75s Checking existence of `"Maybe Later" StaticText`
+    t =    10.77s Checking existence of `"No Thanks" Button`
+    t =    10.79s Checking existence of `"No Thanks" StaticText`
+    t =    10.81s Checking existence of `"Skip" Button`
+    t =    10.83s Checking existence of `"Skip" StaticText`
+    t =    10.85s Checking existence of `"Not now" Button`
+    t =    10.87s Checking existence of `"Not now" StaticText`
+    t =    10.89s Checking existence of `"Manage" Button`
+    t =    10.91s Checking existence of `"Manage" StaticText`
+    t =    10.93s Checking existence of `"Settings" Button`
+    t =    10.95s Checking existence of `"Settings" StaticText`
+    t =    10.97s Get number of matches for: Elements matching predicate 'label == "Decline"'
+    t =    10.99s Checking existence of `"Join" Button`
+    t =    11.06s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
+    t =    11.07s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
+    t =    11.07s Checking existence of `"Join" StaticText`
+    t =    11.13s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
+    t =    11.15s Ignoring failure to get hierarchy for remote element in process 788 (Error getting main window kAXErrorServerNotFound)
