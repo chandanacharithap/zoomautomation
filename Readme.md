@@ -1,97 +1,94 @@
-# Zoom Dual UI Automation (Xcode GUI-Only)
+# Zoom Automation UI Tests (Xcode)
 
-Automated Zoom meeting flows for **Host** and **Client** using Xcode UI Tests—no Terminal needed. Runs entirely from the **Test Navigator** using the little **diamonds**.
+This repo contains a `ZoomDualUITests.swift` file that automates a **Host** and **Client** Zoom flow using **Xcode UI Tests**, looping through WireGuard VPN tunnels.
+---
+
+## Setup (from scratch)
+
+### 1) Create a new Xcode project
+1. Xcode → **File → New → Project…**
+2. Choose **iOS App**
+3. Name it anything (example: `wireguardZoomautomationtest`)
+4. ✅ Make sure **Include Tests** is checked (this creates *UITests* target)
 
 ---
 
-## Prereqs (one-time)
+### 2) Add the test file from this repo
+1. In Xcode Project Navigator:
+   - **File → Add Files to "<YourProjectName>"…**
+2. Select **`ZoomDualUITests.swift`** from this repo
+3. In the “Choose options for adding these files” popup:
+   - ✅ Check **`<YourProjectName>UITests`**
+   - ❌ Uncheck the **App** target (`<YourProjectName>`)
+   - ❌ Uncheck the **Unit Tests** target (`<YourProjectName>Tests`)
+4. Click the file you added → right panel **File Inspector** → **Target Membership**
+   - ✅ `<YourProjectName>UITests` must be checked
 
-* **Two iPhones** (or one, run separately):
-
-  * Developer Mode enabled (Settings → Privacy & Security → Developer Mode).
-  * Trusted on your Mac.
-* **Zoom** installed and signed in on both phones (`us.zoom.videomeetings`).
-* **Contact** on the host phone named exactly: `chandana charitha peddinti`
-  (or change `contactName` in the test file).
-* **VPN tunnels** added in iOS Settings → VPN (names must match the code if you use the VPN loops).
-* iOS language **English** (labels like “Participants”, “End”).
-* Xcode 15+ recommended.
-
----
-
-## Project Setup (from scratch)
-
-1. **Xcode → File → New → Project… → iOS App**
-   Name it anything (e.g., `wireguardZoomAutomation`). ✅ **Include Tests** must be checked.
-2. Convert to **Test Plans**:
-   Scheme menu → **Edit Scheme…** → **Test** → “**Convert to use Test Plans…**” (accept defaults).
-3. In the Project Navigator, under your **UITests target** (e.g., `…UITests`):
-   **Right-click → New File… → Swift File** → name it **`ZoomDualUITests.swift`**.
-   Paste the test code there.
-   In **File Inspector → Target Membership**, ensure ✅ the **UITests** target is checked.
-4. Open the **.xctestplan** file →
-
-   * **Configurations → Default Configuration**
-
-     * **Target** = your **UITests** bundle (not the app).
-     * **Language/Region** = English (US).
-     * **Application** = leave empty (tests launch Zoom/Settings by bundle ID).
+> If you see `No such module 'XCTest'`, it means the file is attached to the **App target** instead of **UITests**. Fix Target Membership as above.
 
 ---
 
-## How to Run 
+## One-time device setup (first run on a phone)
 
-1. Plug in/select the iPhone you want as your **Destination**:
-   In the top toolbar (next to Run/Stop), click the **device selector** and pick the iPhone.
-2. Open **Test Navigator**: **⌘6** (or View → Navigators → Show Test Navigator).
-3. Expand: **`<YourUITestsTarget>` → `ZoomDualUITests`**. You’ll see:
-
-   * ◇ `testHost_RunAllTunnels` (or `testHost_RunSingle`, depending on your file)
-   * ◇ `testClient_RunAllTunnels` (or `testClient_RunSingle`)
-4. **Click the diamond ◇** next to the single test you want to run.
-
-   * To run **Host**: set Destination to the **host iPhone**, then click the **Host** diamond.
-   * To run **Client**: set Destination to the **client iPhone**, then click the **Client** diamond.
-5. Watch the test in the **Report** or **Debug** area. Rerun as needed by clicking the diamond again.
-
-> Tip: If the toolbar Destination is wrong, the diamond will run on the wrong device—always set the Destination first.
+### 3) Pair / trust the iPhone with Xcode
+1. Connect your iPhone to your Mac using a **cable**
+2. On iPhone:
+   - Trust the computer when prompted
+   - **Settings → Privacy & Security → Developer Mode → ON** (restart if asked)
+3. In Xcode:
+   - **Product → Destination → Manage Run Destinations…**
+   - Ensure your iPhone appears and is usable
 
 ---
 
-## Config You Can Tweak (in `ZoomDualUITests.swift`)
+## Project settings (recommended)
 
-At the top of the file:
+### 4) Set Deployment Target for all targets
+1. In Xcode, double-click the blue `.xcodeproj` entry (your project name with the Xcode icon)
+2. Go to **General**
+3. For **each target** (App / Tests / UITests), set:
+   - **Deployment Info → iOS = 18.4** (you can type it)
 
+---
+
+## Running
+
+### 5) Build to your phone
+1. At the top toolbar, choose the **Destination** dropdown → select your iPhone
+2. Click the **Run (▶︎)** button once (this builds + installs the runner on the phone)
+
+### 6) Run UI tests
+You have two ways:
+
+**Option A (recommended, explicit):**
+- Open **Test Navigator** (⌘6)
+- Click the **◇ diamond** next to:
+  - `testHost_RunAllTunnels()` on the *Host phone*
+  - `testClient_RunAllTunnels()` on the *Client phone*
+
+**Option B (⌘U):**
+- Press **⌘U** to run tests on the current destination.
+
+> If you have 2 phones connected and Xcode runs tests on both, it’s because the Test Plan has **Execute in parallel** enabled.  
+> To make ⌘U deterministic, open the Test Plan and disable **Execute in parallel** for UITests.
+
+---
+
+## Pre-reqs inside Zoom (to avoid flaky failures)
+- Zoom installed and **signed in** on both phones
+- Open Zoom once manually to clear first-run popups (camera/mic/notifications)
+- Host phone must have a contact named exactly:
+  - `chandana charitha peddinti`  
+  (or change `contactName` in the test file)
+- Keep phones awake (Auto-Lock = Never temporarily helps)
+
+---
+
+## VPN tunnels (optional)
+If you use WireGuard VPN loops, the tunnel names in iOS Settings must match the arrays in the test file:
 ```swift
-private let contactName       = "chandana charitha peddinti"
-private let callSecondsHost   = 20
-private let callSecondsClient = 20
-
-// If your version includes VPN and multi-VM loops:
 private let hostTunnels   = ["rtc-australia-east"]
 private let clientTunnels = ["rtc-central-us","rtc-japan-east","rtc-germany-west-central"]
-```
-
-Change these to match your contact/tunnels/durations.
-
----
-
-## First-Run Checklist (avoids flaky clicks)
-
-* Open Zoom **once** on each phone to clear first-run popups (camera/mic/notifications).
-* Ensure **Waiting Room** is configured so “Admit” appears.
-* Verify the host phone actually has the **contact** (or update `contactName`).
-* Keep phones **awake & unlocked** while testing.
-
----
-
-## Troubleshooting Quickies
-
-* **“Participants”/“End” not found** → The UI sometimes hides controls. The test taps to reveal; if it still fails, open Zoom manually once and try again.
-* **“Join” duplicate issue (client)** → The test picks the best/visible “Join”; ensure the invite card is on screen (no overlapping panels).
-* **VPN fails** → First-time iOS alerts can block the toggle; open Settings → VPN once manually to allow permissions.
-
----
 
 ## Suggested Repo Layout
 
@@ -104,6 +101,6 @@ your-repo/
    └─ ZoomDualUITests.swift                # <— your test code
 ```
 
-That’s it—everything is runnable via **Xcode GUI**: set the **Destination** iPhone at the top, then click the **diamond** next to **Host** or **Client** in the **Test Navigator**. Push this repo to GitHub as-is (with the `.gitignore`) and you’re good.
+That’s it—everything is runnable via **Xcode GUI**: set the **Destination** iPhone at the top, then click the **diamond** next to **Host** or **Client** in the **Test Navigator**. 
 
 Note: Please add sleep(5) as the first line in private func clientFlow(on app: XCUIApplication) function so that the automation will run smoothly.
