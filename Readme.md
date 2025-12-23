@@ -92,14 +92,13 @@ private let clientTunnels = ["rtc-central-us","rtc-japan-east","rtc-germany-west
 
 ## Suggested Repo Layout
 
-```
+```text
 your-repo/
-   ├─ wireguardZoomAutomation.xcodeproj
-   ├─ wireguardZoomAutomation.xctestplan
-   ├─ wireguardZoomAutomation/                # (stub app target, untouched)
-   └─ wireguardZoomAutomationUITests/
-      └─ ZoomDualUITests.swift                # <— your test code
-   ```
+├─ wireguardZoomAutomation.xcodeproj
+├─ wireguardZoomAutomation.xctestplan
+├─ wireguardZoomAutomation/                 # stub app target (untouched)
+└─ wireguardZoomAutomationUITests/
+   └─ ZoomDualUITests.swift                 # UI test code
 
 That’s it—everything is runnable via **Xcode GUI**: set the **Destination** iPhone at the top, then click the **diamond** next to **Host** or **Client** in the **Test Navigator**. 
 
